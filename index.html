@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/element.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <title>Currency Converter</title>
+  </head>
+  <body class="body">
+    <div class="container">
+      <form class="form js-form">
+        <h1 class="form__header">Kalkulator walut</h1>
+        <p>
+          <label>
+            <span class="form__labelText"> Kwota *pole obowiązkowe </span>
+            <input
+              class="form__field js-amount"
+              required
+              type="number"
+              min="1"
+              step="any"
+              value="100"
+            />
+          </label>
+        </p>
+        <label>
+          <span class="form__labelText"> Przelicz z: </span>
+          <select class="form__field js-currency" name="currency">
+            <option value="USD">USD</option>
+            <option value="GBP">GBP</option>
+            <option value="EUR" selected>EUR</option>
+          </select>
+        </label>
+        <p>
+          <button class="form__button js-submit">Przelicz!</button>
+        </p>
+        <p class="form__result">
+          Kwota w PLN: <strong class="js-result">N/A</strong>
+        </p>
+        <p class="form___info">
+          * Przelicznik kursu walut na dzień 18.01.2024.
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
