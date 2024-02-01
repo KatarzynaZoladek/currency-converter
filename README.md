@@ -4,7 +4,7 @@
 
 ## Demo
 
-![Link to my currency converter](https://katarzynazoladek.github.io/currency-converter/)
+https://katarzynazoladek.github.io/currency-converter/
 
 ## Content of Project
 - General info
